@@ -1,0 +1,90 @@
+/* TodoList.css */
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.todo-list-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-list-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-list-item .completed {
+  text-decoration: line-through;
+}
+
+.todo-list-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list-item button.edit {
+  background-color: #2196f3;
+  color: #fff;
+  gap: 10px;
+  margin-left: 5px;
+}
+
+.todo-list-item button.edit:hover {
+  background-color: #0d8ce8;
+}
+
+.todo-list-item button:not(.edit) {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.todo-list-item button:not(.edit):hover {
+  background-color: #e61a0e;
+}
+
+.delete {
+  margin-left: 5px;
+}
+
+.container-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  padding: 10px auto;
+  padding-bottom: 10px;
+}
+
+.form-Button {
+  display: flex;
+  justify-content: center;
+  background-color: #ffb042;
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form-Button:hover {
+  background-color: #fda831;
+  color: black;
+}
